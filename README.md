@@ -6,6 +6,7 @@
 --------------------------------------------------------------------------------------------------
 Consignas del Proyecto Final:
 Usar las operaciones basicas CRUD brindadas en el curso
+
 C: Create -> Post
 
 R: Read	  -> Get
