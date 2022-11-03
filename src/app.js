@@ -60,8 +60,6 @@ app.use(indexRoutes);
 app.use(userRoutes);
 app.use(notesRoutes);
 
-
-
 // static files
 app.use(express.static(join(__dirname, "public")));
 

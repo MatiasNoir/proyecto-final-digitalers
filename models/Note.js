@@ -1,4 +1,8 @@
 import mongoose from "mongoose";
+
+//----------------- DEL PROYECTO BASE ---------------------------------------------------------
+// El Article del proyecto base sera el Note de mi proyecto
+
 // const { marked } = require('marked')
 /*SLUG = Lo que viene despues de nuestro dominio
 ej: https://dominio.com/SLUG/ y se refiere
@@ -8,9 +12,8 @@ a una pagina o publicacion especifica. */
 // const createDOMPurify = require('dompurify');
 /*nos permite recrear un DOM dentro de un entorno en el que no contamos con un navegador */
 // const { JSDOM } = require('jsdom');
-
 // const dompurify = createDOMPurify(new JSDOM().window)
-
+//---------------------------------------------------------------------------------------------
 const noteSchema = new mongoose.Schema(
     {
         title: {
@@ -50,7 +53,6 @@ const noteSchema = new mongoose.Schema(
 )
 
 //Middleware .pre()
-
 // noteSchema.pre('validate', function (next) {
 //     if (this.title) {
 //         //strict: elimina los caracteres especiales
