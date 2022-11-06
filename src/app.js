@@ -1,6 +1,7 @@
 //Para usar import hay que poner "type": "module" en el package.json
 //Se intentó separar lo maximo posible los procedimientos
 import express from "express";
+import exphbs from "express-handlebars"
 import session from "express-session";
 import methodOverride from "method-override";
 import flash from "connect-flash";
@@ -12,10 +13,10 @@ import { fileURLToPath } from "url";
 
 import { MONGODB_URI, PORT } from "./config.js";
 
-import indexRoutes from "../routes/index.routes.js";
-import notesRoutes from "../routes/notes.routes.js";
-import userRoutes from "../routes/auth.routes.js";
-import "../config/passport.js";
+import indexRoutes from "./routes/index.routes.js";
+import notesRoutes from "./routes/notes.routes.js";
+import userRoutes from "./routes/auth.routes.js";
+import "./config/passport.js";
 
 // inicializar
 const app = express();
@@ -26,14 +27,19 @@ app.set("port", PORT);
 app.set("views", join(__dirname, "views")); //puede estar aca el problema? -V1.0
 
 // config view engine
-app.set('view engine', 'ejs');
-app.use(express.urlencoded({ extended: false }));
-app.use(methodOverride('_method'));
+const hbs = exphbs.create({
+  defaultLayout: "main",
+  layoutsDir: join(app.get("views"), "layout"),
+  partialsDir: join(app.get("views"), "partials"),
+  extname: ".hbs",
+});
+app.engine(".hbs", hbs.engine);
+app.set("view engine", ".hbs");
 
 // middlewares
 app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: false }));
-
+app.use(methodOverride('_method'));
 app.use(
   session({
     secret: "secret",

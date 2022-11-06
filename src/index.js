@@ -1,5 +1,5 @@
 import app from "./app.js";
-import { createTestUser } from "../libs/testUser.js";
+import { createTestUser } from "./libs/testUser.js";
 //Usuario de prueba, para testear el funcionamiento de la app
 // email: test@localhost contraseña: testeando123
 import "./db.js";
