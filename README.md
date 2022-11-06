@@ -49,3 +49,8 @@ usuario tendra un conjunto de notas distintas, creada por cada uno de dichos usu
 	*compartir notas por redes sociales (enviar el titulo y contenido)
 	*poder cargar archivos(documentos,imagenes)
 	*...
+
+------------------------------------
+DEPLOY EN RENDER: 
+https://notes-app-3whk.onrender.com/
+------------------------------------
