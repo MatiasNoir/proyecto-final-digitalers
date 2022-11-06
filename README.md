@@ -43,8 +43,9 @@ Ejemplo de uso:
 -Me puedo desconectar (al desconectarse se deberian guardar las notas que haya creado, cada
 usuario tendra un conjunto de notas distintas, creada por cada uno de dichos usuarios)
 
--Otras funcionalidades que podria agregar: ???
-	*un chat entre usuarios
+-Otras funcionalidades que podria agregar:
+
 	*un reloj al estilo Pomodoro (para concentracion)
-	*compartir notas por redes sociales
+	*compartir notas por redes sociales (enviar el titulo y contenido)
+	*poder cargar archivos(documentos,imagenes)
 	*...
