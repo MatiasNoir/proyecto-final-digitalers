@@ -5,19 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App de Notas</title>
+    {{!-- FAV ICON: https://www.favicon.cc/?action=icon&file_id=806755 --}}
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAJ6TrAFy+8QCC0vgA7+/vAC6n7ACE0/gAS2RuAKbU5QDAwMAAv+3+ACek6gApoeYAAAAAAAAAAAAAAAAARERERERERABEREREREREAEREREREREQAREREeIRERABJmZSohUREAERERKolVEQAREREozUVRABJmZRDNlFUAEREREQzZRUAREREREM2W1BJmZmZRDNlxUREREREQzZVREREREREMzVJmZmZmURDM0REREREREQzRERERERERAMAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA" rel="icon" type="image/x-icon" />
     <!-- ESTILOS: BOOTSTRAP | BOOTSWATCH THEME -->
-    <link rel="stylesheet" href="https://bootswatch.com/5/sketchy/bootstrap.min.css">
-    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
-    <!-- Agregar fuente personal? -->
-    <!-- Agregar CSS personal? -->
+    <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="/src/public/css/main.css">
 </head>
 <body>
-    <!-- buenas practicas sobre como navegar entre paginas con EJS 
-      (Explicacion de para que se usa partials, etc)
-      https://stackoverflow.com/questions/41322217/i-want-to-navigate-to-another-page-in-ejs-using-a-link 
-    
-    -->
-
     {{> navigation }}
     <main class="container p-5">
       <div class="col-md-4 offset-md-4">
@@ -28,6 +23,6 @@
     </main>
 
     <!-- Script Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
