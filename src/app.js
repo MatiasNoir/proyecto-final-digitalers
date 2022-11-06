@@ -24,7 +24,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // settings
 app.set("port", PORT);
-app.set("views", join(__dirname, "views")); //puede estar aca el problema? -V1.0
+app.set("views", join(__dirname, "views"));
 
 // config view engine
 const hbs = exphbs.create({
@@ -76,7 +76,7 @@ app.use((req, res, next) => {
 app.use((error, req, res, next) => {
   res.status(error.status || 500);
   res.render("error", {
-    error,    //este error no se renderiza en "views/error.ejs" , o es otro el error??
+    error,
   });
 });
 
