@@ -1,8 +1,8 @@
 # proyecto-final-digitalers
 
 --------------------------------------------------------------------------------------------------
-	          ESTE .TXT ES TEMPORAL, Y SERÁ COPIADO EN EL README.MD DE GITHUB,
-    ELIMINARLO CUANDO EL PROYECTO ESTE FINALIZADO	LO UTILIZO COMO TRACK DE IDEAS, AVANCES, ETC
+	          ESTE .TXT ES TEMPORAL, ELIMINARLO CUANDO EL PROYECTO ESTE FINALIZADO,
+		  LO UTILIZO COMO TRACK DE IDEAS, AVANCES, ETC
 --------------------------------------------------------------------------------------------------
 Consignas del Proyecto Final:
 Usar las operaciones basicas CRUD brindadas en el curso
