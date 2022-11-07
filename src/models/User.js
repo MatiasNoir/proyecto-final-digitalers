@@ -23,11 +23,13 @@ const userSchema = new mongoose.Schema(
     { versionKey: false }
 );
 
+//methods es de mongoose, me permite crear un metodo para una clase
+//hash y salt, son dos formas de agregarle "seguridad" a la contraseña, cifrandola
 userSchema.methods.encryptPassword = async (password) => {
     const salt = await bcrypt.genSalt(10);
     return await bcrypt.hash(password, salt);
 };
-
+//devuelve un boolean, comparando una contraseña y la contraseña de la db
 userSchema.methods.matchPassword = async function (password) {
     return await bcrypt.compare(password, this.password);
 };

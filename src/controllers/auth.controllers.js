@@ -3,6 +3,7 @@ import passport from "passport";
 
 export const renderRegisterForm = (req, res) => res.render("auth/register");
 
+//registro de usuario
 export const register = async (req, res) => {
   let errors = [];
   const { name, email, password, confirm_password } = req.body;
@@ -24,14 +25,14 @@ export const register = async (req, res) => {
     });
   }
 
-  // Look for email coincidence
+  // Email coincide
   const userFound = await User.findOne({ email: email });
   if (userFound) {
     req.flash("error_msg", "Este Email ya se encuentra en uso.");
     return res.redirect("/auth/register");
   }
 
-  // Saving a New User
+  // Guardar un nuevo usuario
   const newUser = new User({ name, email, password });
   newUser.password = await newUser.encryptPassword(password);
   await newUser.save();
