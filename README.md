@@ -5,8 +5,8 @@
 		  LO UTILIZO COMO TRACK DE IDEAS, AVANCES, ETC
 --------------------------------------------------------------------------------------------------
 Consignas del Proyecto Final:
-Usar las operaciones basicas CRUD brindadas en el curso,
-ggregandole funcionalidad extra, y aplicando estilo.
+Usar las operaciones basicas CRUD brindadas en el curso, 
+agregandole funcionalidad extra, y aplicando estilo.
 Por ultimo, realizar un deploy del proyecto en algun hosting
 
 Yo decidi crear un sitio web, donde vos puedas manipular Notas
