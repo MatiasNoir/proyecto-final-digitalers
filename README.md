@@ -17,7 +17,7 @@ Flujo:
 
 -Podes crear nota, ver nota, actualizar nota, o eliminar nota
 
-Ejemplo de uso(Notas):
+	Ejemplo de uso (Notas):
 
  	*Creo una nota: ir a hacer compras al super el viernes,
 	colocando en la descripcion, todos los elementos que quiero comprar.
