@@ -17,7 +17,7 @@ D: Delete -> Delete
 
 Agregandole funcionalidad extra, y aplicando estilo
 
-Por ultimo, realizar un deploy del proyecto en algun hosting/servidor.
+Por ultimo, realizar un deploy del proyecto en algun hosting
 
 Yo decidi crear un sitio web, donde vos puedas manipular Notas
 
@@ -29,7 +29,7 @@ Flujo del programa/web:
 
 Ejemplo de uso:
 
- 	*Creo una nota: ir a hacer compras al super el viernes 29/10,
+ 	*Creo una nota: ir a hacer compras al super el viernes,
 	colocando en la descripcion, todos los elementos que quiero comprar.
 	
 	*Leo una nota: puedo entrar a la nota, y leer toda la informacion de dicha nota.
