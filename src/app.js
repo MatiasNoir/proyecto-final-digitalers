@@ -1,5 +1,3 @@
-//Para usar import hay que poner "type": "module" en el package.json
-//Se intentó separar lo maximo posible los procedimientos
 import express from "express";
 import exphbs from "express-handlebars"
 import session from "express-session";
